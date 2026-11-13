@@ -1,0 +1,34 @@
+:root{font:16px system-ui,sans-serif;color:#05002e;background:#edf0f8;accent-color:#0737cf}
+*{box-sizing:border-box}
+body{margin:0}
+header{background:#fff;border-top:.32rem solid #0737cf;padding:1rem max(1rem,calc((100% - 72rem)/2));display:flex;justify-content:space-between;align-items:center;gap:1rem;border-bottom:1px solid #dce2f1}
+header a{color:inherit;text-decoration:none;font-weight:700}
+header strong,a{color:#0737cf}
+header span,.intro,#summary,.meta{color:#4e5670}
+main{max-width:74rem;padding:0 1rem;margin:2.4rem auto}
+h1{font-size:clamp(2rem,5vw,3.3rem);letter-spacing:-.04em;margin:0}
+.intro{margin:.5rem 0 1.5rem}
+.workspace{display:grid;grid-template-columns:15rem minmax(0,1fr);background:#fff;border:1px solid #dce2f1;border-radius:.7rem;overflow:hidden}
+aside{padding:1.2rem;background:#f7f8fd;border-right:1px solid #dce2f1}
+section{padding:1.4rem;min-width:0}
+h2{font-size:1.2rem}
+aside h2{font-size:1rem}
+button,input,select{font:inherit;padding:.55rem .75rem;border:1px solid #abb6d2;border-radius:.35rem;background:#fff;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default;opacity:.55}
+button[aria-pressed=true]{background:#e2eaff;border-color:#0737cf}
+#topics{display:grid;gap:.35rem}
+#topics button{text-align:left}
+form{display:flex;gap:.45rem;margin-bottom:1rem}
+input{min-width:0;flex:1}
+form button{background:#0737cf;color:#fff;border-color:#0737cf}
+article{border-top:1px solid #dce2f1;padding:.85rem 0;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+article h3{font-size:1rem;margin:0}
+.meta{font-size:.85rem;margin:.3rem 0 0}
+article a{flex:none}
+.date-group{margin:1.4rem 0 .5rem;color:#4e5670;font-size:.9rem}
+nav{display:flex;gap:.5rem;margin-top:1rem}
+.email-body{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65}
+.source{background:#fff;border:1px solid #dce2f1;border-radius:.7rem;margin-top:1rem}
+:focus-visible{outline:3px solid #0052ff;outline-offset:2px}
+@media(max-width:660px){.workspace{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid #dce2f1}#topics{display:flex;flex-wrap:wrap}article{align-items:flex-start}.intro{line-height:1.5}}
