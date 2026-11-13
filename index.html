@@ -6,6 +6,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
   <title>iVision Knowledge Hub · Guest demo</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="live-config.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -15,13 +16,14 @@
     <p class="intro">Search sample emails, follow project activity, and read the original synthetic source text.</p>
     <div class="workspace">
       <aside aria-label="Browse">
+        <p id="operator-link" hidden><a>Review &amp; Approve</a></p>
         <button id="timeline" type="button" aria-pressed="false">Project timeline</button>
         <h2>Topics</h2>
         <div id="topics"></div>
       </aside>
       <section aria-labelledby="view-title">
         <form id="search">
-          <input id="query" type="search" maxlength="300" aria-label="Search emails" placeholder="Search emails, e.g. Atlas" autocomplete="off">
+          <input id="query" type="search" maxlength="300" aria-label="Search emails" placeholder="Ask for updates or search by keyword" autocomplete="off">
           <button type="submit">Search</button>
         </form>
         <label for="project">Project</label>
